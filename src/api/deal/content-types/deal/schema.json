@@ -4,15 +4,60 @@
   "info": {
     "singularName": "deal",
     "pluralName": "deals",
-    "displayName": "deal"
+    "displayName": "Deal",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Tagline": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "MinInvestment": {
+      "type": "integer",
+      "required": true,
+      "default": 100
+    },
+    "Location": {
       "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "Categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "Deals"
+    },
+    "Type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::type.type",
+      "inversedBy": "Deals"
     }
   }
 }
