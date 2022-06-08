@@ -58,6 +58,10 @@
       "relation": "manyToOne",
       "target": "api::type.type",
       "inversedBy": "Deals"
+    },
+    "GoTo": {
+      "type": "string",
+      "required": true
     }
   }
 }
