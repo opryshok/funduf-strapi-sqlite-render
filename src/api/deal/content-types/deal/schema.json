@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deals",
+  "info": {
+    "singularName": "deal",
+    "pluralName": "deals",
+    "displayName": "deal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
