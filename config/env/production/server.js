@@ -3,4 +3,5 @@ module.exports = ({ env }) => ({
   dirs: {
     public: "/data/public"
   },
+  url: env('PUBLIC_URL', 'https://funduf.opryshok.com'),
 });
