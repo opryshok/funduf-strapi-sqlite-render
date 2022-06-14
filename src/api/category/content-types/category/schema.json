@@ -20,12 +20,6 @@
       "type": "string",
       "required": true
     },
-    "Deals": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::deal.deal",
-      "inversedBy": "Categories"
-    },
     "Slug": {
       "type": "uid",
       "targetField": "Title",

@@ -20,12 +20,6 @@
       "type": "string",
       "required": true
     },
-    "Deals": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::deal.deal",
-      "mappedBy": "Type"
-    },
     "Slug": {
       "type": "uid",
       "targetField": "Title",
