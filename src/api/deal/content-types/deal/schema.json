@@ -12,18 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Tagline": {
+    "tagline": {
       "type": "string",
-      "required": true
+      "required": false
     },
-    "Description": {
+    "description": {
       "type": "richtext"
     },
-    "Logo": {
+    "logo": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -34,22 +34,21 @@
         "audios"
       ]
     },
-    "MinInvestment": {
+    "mininvestment": {
       "type": "integer",
       "required": true,
       "default": 100
     },
-    "Location": {
+    "location": {
       "type": "string"
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
-      "targetField": "Title",
-      "required": false
-    },
-    "GoTo": {
-      "type": "string",
       "required": true
+    },
+    "gotourl": {
+      "type": "string",
+      "required": false
     }
   }
 }
