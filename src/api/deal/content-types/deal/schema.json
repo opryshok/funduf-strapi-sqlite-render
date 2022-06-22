@@ -18,7 +18,7 @@
     },
     "tagline": {
       "type": "string",
-      "required": false
+      "required": true
     },
     "description": {
       "type": "richtext"
@@ -49,6 +49,18 @@
     "gotourl": {
       "type": "string",
       "required": false
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "deals"
+    },
+    "types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::type.type",
+      "inversedBy": "deals"
     }
   }
 }

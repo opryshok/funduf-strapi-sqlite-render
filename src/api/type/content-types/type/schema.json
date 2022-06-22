@@ -24,6 +24,12 @@
       "type": "uid",
       "targetField": "Title",
       "required": true
+    },
+    "deals": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::deal.deal",
+      "mappedBy": "types"
     }
   }
 }
