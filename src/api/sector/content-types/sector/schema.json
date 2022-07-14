@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "sectors",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Category",
-    "description": ""
+    "singularName": "sector",
+    "pluralName": "sectors",
+    "displayName": "Sector"
   },
   "options": {
     "draftAndPublish": true
@@ -13,22 +12,20 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "tagline": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "slug": {
       "type": "uid",
-      "required": true
+      "targetField": "title"
     },
     "deals": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::deal.deal",
-      "mappedBy": "categories"
+      "mappedBy": "sectors"
     }
   }
 }

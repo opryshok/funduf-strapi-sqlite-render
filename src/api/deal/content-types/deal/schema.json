@@ -20,9 +20,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "richtext"
-    },
     "companylogo": {
       "type": "media",
       "multiple": false,
@@ -49,12 +46,6 @@
     "gotourl": {
       "type": "string",
       "required": false
-    },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "inversedBy": "deals"
     },
     "types": {
       "type": "relation",
@@ -92,6 +83,12 @@
     },
     "profitability": {
       "type": "string"
+    },
+    "sectors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sector.sector",
+      "inversedBy": "deals"
     }
   }
 }
