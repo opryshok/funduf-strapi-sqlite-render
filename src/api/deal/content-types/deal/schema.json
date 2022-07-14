@@ -23,7 +23,7 @@
     "description": {
       "type": "richtext"
     },
-    "logo": {
+    "companylogo": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -71,14 +71,27 @@
       "type": "string"
     },
     "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "liquidity": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "companytagline": {
+      "type": "string"
+    },
+    "profitability": {
+      "type": "string"
     }
   }
 }
