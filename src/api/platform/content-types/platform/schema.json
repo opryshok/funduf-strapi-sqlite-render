@@ -4,7 +4,7 @@
   "info": {
     "singularName": "platform",
     "pluralName": "platforms",
-    "displayName": "platform",
+    "displayName": "Platform",
     "description": ""
   },
   "options": {
@@ -28,14 +28,15 @@
       "target": "api::deal.deal"
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
